@@ -9,4 +9,4 @@ package=(   'gcc'
 
 apt-get update && apte-get upgrade -y
 apt-get install ${package[*]} -y
-apt-get autoremove
+apt-get autoremove -y
