@@ -27,8 +27,8 @@ if [ -z "$schemaName" ]; then
 fi
 echo "Schema name is $schemaName"
 
-schemaBackup="pg_dump $dbName -s --schema=\"$schemaName\" > \"\$(echo \$(date +\"%F %T\") Schema_of_$dbName.$schemaName.sql)\""
-dataBackup="pg_dump $dbName -a --disable-triggers --column-inserts --schema=\"$schemaName\" > \"\$(echo \$(date +\"%F %T\") Data_of_$dbName.$schemaName.sql)\""
+schemaBackup="pg_dump $dbName -s --schema=\"$schemaName\" > \"\$(echo \$(date +\"%F %H-%M-%S\") Schema_of_$dbName.$schemaName.sql)\""
+dataBackup="pg_dump $dbName -a --disable-triggers --column-inserts --schema=\"$schemaName\" > \"\$(echo \$(date +\"%F %H-%M-%S\") Data_of_$dbName.$schemaName.sql)\""
 
 eval "$schemaBackup"
 eval "$dataBackup"
