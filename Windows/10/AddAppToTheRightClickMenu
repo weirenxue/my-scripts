@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\Hiew 8.63]
+"Icon"="\"C:\\Users\\wrxue\\RE\\hiew_8.63_Retail\\hiew32.exe\""
+
+[HKEY_CLASSES_ROOT\*\shell\Hiew 8.63\Command]
+@="\"C:\\Users\\wrxue\\RE\\hiew_8.63_Retail\\hiew32.exe\" \"%1\""
