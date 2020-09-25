@@ -15,4 +15,4 @@ mixBackup="mysqldump -u wrxue -p --databases ${dbName} --default-character-set=u
 
 eval "${schemaBackup}"
 eval "${dataBackup}"
-eval "${mixBackup}"                                                                                                           4,0-1         All
+eval "${mixBackup}"
