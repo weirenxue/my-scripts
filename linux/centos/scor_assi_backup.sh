@@ -16,3 +16,6 @@ mixBackup="mysqldump -u wrxue -p --databases ${dbName} --default-character-set=u
 eval "${schemaBackup}"
 eval "${dataBackup}"
 eval "${mixBackup}"
+
+touch $0
+find . -mtime +10 -delete
